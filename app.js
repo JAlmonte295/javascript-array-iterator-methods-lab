@@ -98,3 +98,21 @@ const comments = [
   { text: 'Ramen is my fav food ever', id: 123523 },
   { text: 'Nice Nice Nice!', id: 542328 },
 ];
+
+
+// Excersise 1
+
+let veryOldInventors = [];
+
+const result = inventors.filter(inventor => {
+    if (inventor.year >= 1500 && inventor.year < 1599) {
+        veryOldInventors.push(inventor);
+    }
+});
+
+console.log('Exercise 1 my result: ', veryOldInventors);
+console.log('Exercise 1 correct result: ', [
+  { first: 'Galileo', last: 'Galilei', year: 1564, passed: 1642 },
+  { first: 'Johannes', last: 'Kepler', year: 1571, passed: 1630 },
+]);
+
