@@ -110,9 +110,37 @@ const result = inventors.filter(inventor => {
     }
 });
 
-console.log('Exercise 1 my result: ', veryOldInventors);
-console.log('Exercise 1 correct result: ', [
-  { first: 'Galileo', last: 'Galilei', year: 1564, passed: 1642 },
-  { first: 'Johannes', last: 'Kepler', year: 1571, passed: 1630 },
-]);
+// console.log('Exercise 1 my result: ', veryOldInventors);
+// console.log('Exercise 1 correct result: ', [
+//   { first: 'Galileo', last: 'Galilei', year: 1564, passed: 1642 },
+//   { first: 'Johannes', last: 'Kepler', year: 1571, passed: 1630 },
+// ]);
+
+// Excersise 2
+
+let inventorNames = [];
+
+const result2 = inventors.map((inventor) => {
+    inventorNames.push({
+        first: inventor.first,
+        last: inventor.last
+    })
+});
+
+
+// console.log('Exercise 2 my result: ', inventorNames);
+// console.log('Exercise 2 correct result: ', [
+//   { first: 'Albert', last: 'Einstein' },
+//   { first: 'Isaac', last: 'Newton' },
+//   { first: 'Galileo', last: 'Galilei' },
+//   { first: 'Marie', last: 'Curie' },
+//   { first: 'Johannes', last: 'Kepler' },
+//   { first: 'Nicolaus', last: 'Copernicus' },
+//   { first: 'Max', last: 'Planck' },
+//   { first: 'Katherine', last: 'Blodgett' },
+//   { first: 'Ada', last: 'Lovelace' },
+//   { first: 'Sarah E.', last: 'Goode' },
+//   { first: 'Lise', last: 'Meitner' },
+//   { first: 'Hanna', last: 'Hammarström' },
+// ]);
 
