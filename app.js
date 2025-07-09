@@ -257,19 +257,42 @@ const fullNames = people.map(person => {
 //   'William Blake',
 // ]);
 
-// Exercise 6
+// Exercise 6 
 
 let isAdultPresent = null;
 
-const adults = devs.some((dev) => {
-    if (dev.year > 2007) {
-        isAdultPresent = true;
-    } else {
-        isAdultPresent = false;
-    }
-});
+const youngAdults = devs.map(dev => 
+    (2025 - dev.year) >= 18
+);
 
-// console.log('Exercise 6 my result: ', isAdultPresent);
-// console.log('Exercise 6 correct result: ', true);
+isAdultPresent = youngAdults.includes(true); //originally just had adults but it kept showing the boolean for each dev.
+
+
+console.log('Exercise 6 my result: ', isAdultPresent);
+console.log('Exercise 6 correct result: ', true);
 
 // Exercise 7
+
+let isEveryone19OrOlder = null;
+
+const adults = devs.every(dev => 
+    (2025 - dev.year) >= 19
+);
+
+isEveryone19OrOlder = adults;
+
+console.log('Exercise 7 my result: ', isEveryone19OrOlder);
+console.log('Exercise 7 correct result: ', false);
+
+// Exercise 8
+
+let commentById = {};
+
+const findID = comments.find(comment => 
+    comment.id === 823423
+);
+
+commentById = findID;
+
+console.log('Exercise 8 my result: ', commentById);
+console.log('Exercise 8 correct result: ', { text: 'Super good', id: 823423 });
