@@ -268,8 +268,8 @@ const youngAdults = devs.map(dev =>
 isAdultPresent = youngAdults.includes(true); //originally just had adults but it kept showing the boolean for each dev.
 
 
-console.log('Exercise 6 my result: ', isAdultPresent);
-console.log('Exercise 6 correct result: ', true);
+// console.log('Exercise 6 my result: ', isAdultPresent);
+// console.log('Exercise 6 correct result: ', true);
 
 // Exercise 7
 
@@ -281,8 +281,8 @@ const adults = devs.every(dev =>
 
 isEveryone19OrOlder = adults;
 
-console.log('Exercise 7 my result: ', isEveryone19OrOlder);
-console.log('Exercise 7 correct result: ', false);
+// console.log('Exercise 7 my result: ', isEveryone19OrOlder);
+// console.log('Exercise 7 correct result: ', false);
 
 // Exercise 8
 
@@ -294,5 +294,32 @@ const findID = comments.find(comment =>
 
 commentById = findID;
 
-console.log('Exercise 8 my result: ', commentById);
-console.log('Exercise 8 correct result: ', { text: 'Super good', id: 823423 });
+// console.log('Exercise 8 my result: ', commentById);
+// console.log('Exercise 8 correct result: ', { text: 'Super good', id: 823423 });
+
+// Exercise 9
+
+let idx = null;
+
+const findIndex = comments.findIndex(comment =>
+    comment.id === 123523
+);
+
+idx = findIndex;
+
+console.log('Exercise 9 my result: ', idx);
+console.log('Exercise 9 correct result: ', 3);
+
+// Level Up Ex1
+
+let totalYearsLived = 0;
+
+const lifeSpan = inventors.reduce((acc, num) => {
+    return acc + (num.passed - num.year);
+}, 0); //forgot about the 0 initial value T_T
+
+totalYearsLived = lifeSpan;
+
+
+console.log('Level Up 1 my result: ', totalYearsLived);
+console.log('Level Up 1 correct result: ', 861);
