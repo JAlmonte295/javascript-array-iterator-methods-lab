@@ -307,15 +307,15 @@ const findIndex = comments.findIndex(comment =>
 
 idx = findIndex;
 
-console.log('Exercise 9 my result: ', idx);
-console.log('Exercise 9 correct result: ', 3);
+// console.log('Exercise 9 my result: ', idx);
+// console.log('Exercise 9 correct result: ', 3);
 
 // Level Up Ex1
 
 let totalYearsLived = 0;
 
-const lifeSpan = inventors.reduce((acc, num) => {
-    return acc + (num.passed - num.year);
+const lifeSpan = inventors.reduce((acc, inventor) => {
+    return acc + (inventor.passed - inventor.year);
 }, 0); //forgot about the 0 initial value T_T
 
 totalYearsLived = lifeSpan;
@@ -323,3 +323,29 @@ totalYearsLived = lifeSpan;
 
 console.log('Level Up 1 my result: ', totalYearsLived);
 console.log('Level Up 1 correct result: ', 861);
+
+// Level Up Ex2
+
+let travelMethodCounts = {};
+
+const travelTimes = travelMethods.reduce((acc, travel) => {
+    if (acc[travel]) {
+        acc[travel] += 1;
+    } else {
+        acc[travel] = 1;
+    }
+    return acc;
+}, {}); // and then I added 0 T_T...
+
+travelMethodCounts = travelTimes;
+
+// I wonder if reduce automaticall adds ":"?
+
+// console.log('Level Up 2 my result: ', travelMethodCounts);
+// console.log('Level Up 2 correct result: ', {
+//   car: 5,
+//   truck: 3,
+//   bike: 2,
+//   walk: 2,
+//   van: 2,
+// });
