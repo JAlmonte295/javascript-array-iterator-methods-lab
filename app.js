@@ -195,12 +195,67 @@ const result4 = inventors.find((inventor) => {
     }
 });
 
-console.log('Exercise 4 my result: ', inventorNamedAda);
-console.log('Exercise 4 correct result: ', {
-  first: 'Ada',
-  last: 'Lovelace',
-  year: 1815,
-  passed: 1852,
+// console.log('Exercise 4 my result: ', inventorNamedAda);
+// console.log('Exercise 4 correct result: ', {
+//   first: 'Ada',
+//   last: 'Lovelace',
+//   year: 1815,
+//   passed: 1852,
+// });
+
+// Exercise 5
+
+
+let firstLast = [];
+
+const fullNames = people.map(person => {
+    const [lastName, firstName] = person.split(', ');
+    return firstLast.push(`${firstName} ${lastName}`);
 });
 
+// console.log('Exercise 5 my result: ', firstLast);
+// console.log('Exercise 5 correct result: ', [
+//   'Carl Becker',
+//   'Samuel Beckett',
+//   'Mick Beddoes',
+//   'Henry Beecher',
+//   'Ludwig Beethoven',
+//   'Menachem Begin',
+//   'Hilaire Belloc',
+//   'Saul Bellow',
+//   'Robert Benchley',
+//   'Peter Benenson',
+//   'David Ben-Gurion',
+//   'Walter Benjamin',
+//   'Tony Benn',
+//   'Chester Bennington',
+//   'Leana Benson',
+//   'Silas Bent',
+//   'Lloyd Bentsen',
+//   'Ric Berger',
+//   'Ingmar Bergman',
+//   'Luciano Berio',
+//   'Milton Berle',
+//   'Irving Berlin',
+//   'Eric Berne',
+//   'Sandra Bernhard',
+//   'Yogi Berra',
+//   'Halle Berry',
+//   'Wendell Berry',
+//   'Erin Bethea',
+//   'Aneurin Bevan',
+//   'Ken Bevel',
+//   'Joseph Biden',
+//   'Ambrose Bierce',
+//   'Steve Biko',
+//   'Josh Billings',
+//   'Frank Biondo',
+//   'Augustine Birrell',
+//   'Elk Black',
+//   'Robert Blair',
+//   'Tony Blair',
+//   'William Blake',
+// ]);
+
+// Exercise 6
 
