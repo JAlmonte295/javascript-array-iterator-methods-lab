@@ -259,3 +259,17 @@ const fullNames = people.map(person => {
 
 // Exercise 6
 
+let isAdultPresent = null;
+
+const adults = devs.some((dev) => {
+    if (dev.year > 2007) {
+        isAdultPresent = true;
+    } else {
+        isAdultPresent = false;
+    }
+});
+
+// console.log('Exercise 6 my result: ', isAdultPresent);
+// console.log('Exercise 6 correct result: ', true);
+
+// Exercise 7
